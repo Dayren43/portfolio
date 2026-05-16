@@ -20,7 +20,7 @@
 		<span class="pill mono">node-01 · online</span>
 	</div>
 	<div class="right">
-		<span>📍 SE · LULEÅ</span>
+		<span>📍 SE · STOCKHOLM</span>
 		<span>BUILD v0.4.2</span>
 		<span class="clock">{utcTime}</span>
 	</div>

@@ -32,7 +32,7 @@
 			</a>
 			<div class="link-row">
 				<span class="k">LOCATION</span>
-				<span class="v">Luleå, Sweden</span>
+				<span class="v">Stockholm, Sweden</span>
 			</div>
 		</div>
 	</div>
