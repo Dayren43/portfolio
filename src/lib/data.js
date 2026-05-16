@@ -3,7 +3,7 @@ export const PROJECTS = [
 		id: 'CH-01',
 		code: 'rust-cursor',
 		title: 'RustCursor',
-		badge: 'LIVE · 2 DUA',
+		badge: 'LIVE',
 		featured: true,
 		desc: 'A Windows tray tool that remaps the cursor between monitors of different resolutions and physical sizes by translating through a shared millimetre coordinate space. Drag-to-arrange GUI, per-display HWID profiles, two input backends.',
 		stats: [
@@ -89,7 +89,7 @@ export const EXPERIENCE = [
 		role: 'Software Engineer',
 		blurb: 'Full-time role on a defence-tech software team.',
 		detail: 'Specifics under NDA — happy to talk about scope and stack in conversation.',
-		tags: ['Secret :)'],
+		tags: ['Java', 'C++', 'Secret :)'],
 		status: 'active'
 	},
 	{

@@ -17,6 +17,7 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
-		"@sveltejs/adapter-node": "^5.2.16"
+		"@sveltejs/adapter-node": "^5.2.16",
+		"@sveltejs/adapter-cloudflare": "^6.0.0"
 	}
 }

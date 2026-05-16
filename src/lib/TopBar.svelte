@@ -7,20 +7,14 @@
 	}, 1000);
 	onDestroy(() => clearInterval(tick));
 
-	const pad = (/** @type {number} */ n) => String(n).padStart(2, '0');
-	const utcTime = $derived(
-		`${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())}:${pad(now.getUTCSeconds())} UTC`
+	const clockTime = $derived(
+		now.toLocaleTimeString('sv-SE', { timeZone: 'Europe/Stockholm', hour: '2-digit', minute: '2-digit', second: '2-digit' })
 	);
 </script>
 
 <div class="topbar">
-	<div class="left">
-		<span class="led" aria-hidden="true"></span>
-		<span class="brand"><b>DAYREN</b> · SYSTEMS &amp; TOOLS</span>
-		<span class="pill mono">node-01 · online</span>
-	</div>
 	<div class="right">
-		<span>📍 SE · STOCKHOLM</span>
-		<span class="clock">{utcTime}</span>
+		<span>Stockholm</span>
+		<span class="clock">{clockTime}</span>
 	</div>
 </div>

@@ -97,7 +97,6 @@
 				<h4 style="margin-top: 18px">// channel meta</h4>
 				<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-2); line-height: 1.7">
 					<div>code: <span style="color: var(--ink)">{p.code}</span></div>
-					<div>id: <span style="color: var(--ink)">{p.id}</span></div>
 					<div>link: <a href={p.href} target="_blank" rel="noreferrer" style="color: var(--hot)">{p.href.replace('https://', '')}</a></div>
 				</div>
 			</div>
