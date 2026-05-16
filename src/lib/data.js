@@ -16,18 +16,18 @@ export const PROJECTS = [
 		langs: [['Rust', 100, 'oklch(0.74 0.16 35)']],
 		notes: [
 			'Maps pixels → physical millimetres so crossings preserve physical height regardless of pixel density.',
-			'Two backends: WH_MOUSE_LL (anti-cheat-safe) and the Interception kernel driver.',
-			'Drag-to-arrange Settings GUI with hot-reloading TOML config and per-HWID profiles.',
+			'Two input backends: WH_MOUSE_LL (anti-cheat-safe) and the Interception kernel driver.',
+			'Drag-to-arrange settings GUI with hot-reloading TOML config and per-HWID monitor profiles.',
 			'Auto-pauses for fullscreen DX/Vulkan apps via SHQueryUserNotificationState.'
 		],
-		stack: ['Rust', 'egui', 'Win32 API', 'schtasks', 'TOML']
+		stack: ['Rust', 'Win32 API', 'egui', 'TOML']
 	},
 	{
 		id: 'CH-02',
 		code: 'temp-logging',
 		title: 'Temp-logging Dashboard',
 		badge: 'DESIGN SOURCE',
-		desc: 'ESP32-C3 temperature sensor publishing readings to a self-hosted Svelte dashboard. Logging pipeline, on-device webserver, and the visualisation system whose aesthetic this very page borrows from.',
+		desc: 'ESP32-C3 temperature and humidity sensor with a built-in webserver, paired with a self-hosted Svelte dashboard for logging and visualisation.',
 		stats: [
 			['LANG', 'Svelte 84%'],
 			['HARDWARE', 'ESP32-C3'],
@@ -45,10 +45,9 @@ export const PROJECTS = [
 			['Other', 0.6, 'oklch(0.55 0.01 60)']
 		],
 		notes: [
-			'ESP32-C3 firmware in C++ samples a digital temp sensor and serves readings over Wi-Fi.',
-			'Svelte dashboard pulls the JSON feed, persists to disk, and renders rolling charts.',
-			'Python utilities for batch export and CSV inspection.',
-			'The colour, spacing and mono-typography system on this site started life here.'
+			'ESP32-C3 firmware in C++ samples temperature and humidity, serving readings via a built-in HTTP endpoint.',
+			'Python polling service fetches readings every 5 minutes and writes to a PostgreSQL database running in Docker.',
+			'Svelte dashboard fetches data from a backend API and renders rolling charts.'
 		],
 		stack: ['Svelte', 'ESP32-C3', 'C++', 'Python', 'JavaScript']
 	},
@@ -66,18 +65,16 @@ export const PROJECTS = [
 		],
 		href: 'https://github.com/Ltu-Bike-trailer',
 		langs: [
-			['Embedded C', 55, 'oklch(0.66 0.12 260)'],
-			['Rust', 25, 'oklch(0.74 0.16 35)'],
-			['Python', 15, 'oklch(0.68 0.12 220)'],
-			['Other', 5, 'oklch(0.55 0.01 60)']
+			['Embedded Rust', 60, 'oklch(0.74 0.16 35)'],
+			['Python', 25, 'oklch(0.68 0.12 220)'],
+			['Other', 15, 'oklch(0.55 0.01 60)']
 		],
 		notes: [
-			'Cross-team capstone with electrical, mechanical and software disciplines.',
-			'Owned a slice of the firmware + data layer; learned to ship in a real org structure.',
-			'Final deliverable runs as an instrumented platform for further research.',
-			'Biggest lesson: glue work is half the project — protocols, naming, sync.'
+			'Team of 13 across software/firmware, hardware/electrical, and systems/control disciplines.',
+			'Owned sensor nodes: hardware interface design, PCB design for a remote sensor, and firmware on nRF5340 in Embedded Rust.',
+			'Delivered a working MVP that serves as a first prototype and foundation for the next cohort of students to build on.'
 		],
-		stack: ['Embedded C', 'Rust', 'Python', 'CAN bus', 'Git']
+		stack: ['Embedded Rust', 'nRF5340', 'Python', 'CAN bus']
 	}
 ];
 
@@ -87,7 +84,7 @@ export const EXPERIENCE = [
 		duration: 'current',
 		company: 'SAAB',
 		role: 'Software Engineer',
-		blurb: 'Full-time role on a defence-tech software team.',
+		blurb: 'Full-time role on a defence-tech software team operating within a large-scale SAFe agile programme.',
 		detail: 'Specifics under NDA — happy to talk about scope and stack in conversation.',
 		tags: ['Java', 'C++', 'Secret :)'],
 		status: 'active'
@@ -98,8 +95,7 @@ export const EXPERIENCE = [
 		company: 'Ericsson',
 		role: "Master's Thesis",
 		blurb: 'Satellite integration in 6G.',
-		detail:
-			'Final thesis project bridging cellular and satellite links for the next-generation radio access network.',
+		detail: 'Bridging cellular and satellite links for the next-generation radio access network.',
 		tags: ['6G', 'NTN', 'Research', 'Python'],
 		status: 'shipped'
 	},
@@ -119,10 +115,9 @@ export const EXPERIENCE = [
 		duration: '3 months',
 		company: 'Ericsson',
 		role: 'R&D Internship',
-		blurb: 'Python post-processing tooling for data analysis.',
-		detail:
-			'Wrote Python utilities to ingest raw measurement data, clean it, and surface the metrics engineers actually wanted to look at.',
+		blurb: 'Python tooling for post-processing and visualisation of simulation data.',
+		detail: 'Built Python tooling for post-processing and visualisation of simulation data.',
 		tags: ['Python', 'Data', 'Tooling'],
 		status: 'shipped'
-	}
+	},
 ];
