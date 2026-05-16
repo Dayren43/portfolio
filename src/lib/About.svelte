@@ -26,9 +26,9 @@
 				<span class="k">UNI ORG</span>
 				<span class="v">/Ltu-Bike-trailer <span class="arrow">↗</span></span>
 			</a>
-			<a class="link-row" href="mailto:hello@dayren.dev">
+			<a class="link-row" href="mailto:Isak.Forsgren@gmail.com">
 				<span class="k">MAIL</span>
-				<span class="v">hello@dayren.dev <span class="arrow">↗</span></span>
+				<span class="v">Isak.Forsgren@gmail.com <span class="arrow">↗</span></span>
 			</a>
 			<div class="link-row">
 				<span class="k">LOCATION</span>

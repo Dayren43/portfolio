@@ -35,7 +35,7 @@
 	<About />
 
 	<footer class="footer">
-		<span>© {year} DAYREN · BUILT FROM SCRATCH</span>
+		<span>© {year} ISAK FORSGREN · BUILT FROM SCRATCH</span>
 		<span>LAST DEPLOY · {today}</span>
 		<span>END OF FEED</span>
 	</footer>
