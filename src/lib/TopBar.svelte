@@ -21,7 +21,6 @@
 	</div>
 	<div class="right">
 		<span>📍 SE · STOCKHOLM</span>
-		<span>BUILD v0.4.2</span>
 		<span class="clock">{utcTime}</span>
 	</div>
 </div>

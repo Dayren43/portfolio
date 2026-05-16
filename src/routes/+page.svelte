@@ -17,8 +17,8 @@
 	<Hero />
 
 	<div class="section-head">
-		<h2><span class="idx">02 ·</span>Channels</h2>
-		<span class="subtitle">3 projects · sorted by signal</span>
+		<h2><span class="idx">02 ·</span>Projects</h2>
+		<span class="subtitle">3 projects</span>
 	</div>
 
 	<div class="channels">
@@ -35,8 +35,7 @@
 	<About />
 
 	<footer class="footer">
-		<span>© {year} ISAK FORSGREN · BUILT FROM SCRATCH</span>
-		<span>LAST DEPLOY · {today}</span>
-		<span>END OF FEED</span>
+		<span>ISAK FORSGREN</span>
+		<span>{year}</span>
 	</footer>
 </div>

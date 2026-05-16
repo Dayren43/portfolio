@@ -1,7 +1,7 @@
 <div class="grid-2">
 	<div class="panel">
-		<span class="eyebrow"><span class="tick"></span> 04 · OPERATOR</span>
-		<h3 style="margin-top: 12px">About the operator.</h3>
+		<span class="eyebrow"><span class="tick"></span> 04 · ABOUT</span>
+		<h3 style="margin-top: 12px">About me.</h3>
 		<p>
 			I'm a software-leaning engineer who likes the seam between hardware and screens: low-level
 			tools, embedded sensors, the wiring that holds a project together. I prefer small, sharp
@@ -15,16 +15,12 @@
 	</div>
 
 	<div class="panel">
-		<span class="eyebrow"><span class="tick"></span> 05 · ENDPOINTS</span>
+		<span class="eyebrow"><span class="tick"></span> 05 · CONTACT</span>
 		<h3 style="margin-top: 12px">Get in touch.</h3>
 		<div class="links">
 			<a class="link-row" href="https://github.com/Dayren43" target="_blank" rel="noreferrer">
 				<span class="k">GITHUB</span>
 				<span class="v">/Dayren43 <span class="arrow">↗</span></span>
-			</a>
-			<a class="link-row" href="https://github.com/Ltu-Bike-trailer" target="_blank" rel="noreferrer">
-				<span class="k">UNI ORG</span>
-				<span class="v">/Ltu-Bike-trailer <span class="arrow">↗</span></span>
 			</a>
 			<a class="link-row" href="mailto:Isak.Forsgren@gmail.com">
 				<span class="k">MAIL</span>
