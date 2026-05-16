@@ -78,10 +78,8 @@
 			fill={i === 1 ? 'var(--ink)' : 'var(--ink-4)'}>{label}</text>
 	{/each}
 
-	<!-- Y-axis labels -->
+	<!-- Y-axis grid lines -->
 	{#each Y_TICKS as v}
-		<text x={L - 4} y={yScale(v) + 3.5} class="prv-tiny" text-anchor="end"
-			fill="oklch(0.72 0.16 35 / 0.45)">{v}°</text>
 		<line x1={L} y1={yScale(v)} x2={R} y2={yScale(v)}
 			stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
 	{/each}
@@ -115,11 +113,6 @@
 	<!-- Live dot at end of line -->
 	<circle cx={xAt(N-1)} cy={yScale(pts[pts.length-1])} r="2.5" fill="var(--hot)"/>
 
-	<!-- X-axis labels -->
-	{#each X_LABELS as label, i}
-		<text x={L + (i / (X_LABELS.length - 1)) * W} y={B + 10}
-			class="prv-tiny" text-anchor="middle" fill="rgba(245,235,224,0.3)">{label}</text>
-	{/each}
 
 	<!-- Footer stats -->
 	<line x1="20" y1="130" x2="240" y2="130" stroke="var(--border-soft)" stroke-width="0.5"/>
