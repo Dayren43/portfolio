@@ -71,10 +71,10 @@ export const PROJECTS = [
 		],
 		notes: [
 			'Team of 13 across software/firmware, hardware/electrical, and systems/control disciplines.',
-			'Owned sensor nodes: hardware interface design, PCB design for a remote sensor, and firmware on nRF5340 in Embedded Rust.',
+			'Owned sensor nodes: hardware interface design, PCB design for a remote sensor, and firmware on nRF52840 in Embedded Rust.',
 			'Delivered a working MVP that serves as a first prototype and foundation for the next cohort of students to build on.'
 		],
-		stack: ['Embedded Rust', 'nRF5340', 'Python', 'CAN bus']
+		stack: ['Embedded Rust', 'nRF52840', 'Python', 'CAN bus']
 	}
 ];
 
