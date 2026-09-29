@@ -80,7 +80,7 @@ export const PROJECTS = [
 
 export const EXPERIENCE = [
 	{
-		range: 'AUG 2024 — PRESENT',
+		range: 'AUG 2025 — PRESENT',
 		duration: 'current',
 		company: 'SAAB',
 		role: 'Software Engineer',
