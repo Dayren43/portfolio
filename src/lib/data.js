@@ -80,6 +80,16 @@ export const PROJECTS = [
 
 export const EXPERIENCE = [
 	{
+		range: 'NOV 2026 —',
+		duration: 'upcoming',
+		company: 'SAAB',
+		role: 'Embedded Software Engineer',
+		blurb: 'Moving to an embedded team within SAAB, building software on a real-time operating system.',
+		detail: 'Starting soon — specifics under NDA.',
+		tags: ['Embedded', 'RTOS', 'C / C++'],
+		status: 'upcoming'
+	},
+	{
 		range: 'AUG 2025 — PRESENT',
 		duration: 'current',
 		company: 'SAAB',

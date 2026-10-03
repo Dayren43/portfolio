@@ -591,6 +591,8 @@ h1.name em {
   box-shadow: 0 0 8px var(--hot);
   animation: pulse 2.4s ease-in-out infinite;
 }
+.exp-upcoming { color: var(--cool); }
+.exp-upcoming .led-sm { background: var(--cool); box-shadow: 0 0 8px var(--cool); }
 .exp-blurb {
   color: var(--ink);
   font-size: 15px;

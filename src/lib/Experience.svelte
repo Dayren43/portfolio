@@ -25,6 +25,8 @@
 						<span class="exp-role">{e.role}</span>
 						{#if e.status === 'active'}
 							<span class="exp-live"><span class="led-sm" aria-hidden="true"></span>live</span>
+						{:else if e.status === 'upcoming'}
+							<span class="exp-live exp-upcoming"><span class="led-sm" aria-hidden="true"></span>incoming</span>
 						{/if}
 					</div>
 					<p class="exp-blurb">{e.blurb}</p>
