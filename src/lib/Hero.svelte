@@ -11,11 +11,11 @@
 			tools.
 		</h1>
 		<p class="tagline">
-			Embedded systems, low-level tools and the bits in between. Currently chasing pixels across
-			mismatched monitors and milliKelvins across a sensor mesh.
+			Embedded systems, low-level tools and the bits in between. C++ on an RTOS by day; Rust on
+			my own projects, from cursors crossing mismatched monitors to a Wi-Fi temperature sensor.
 		</p>
 		<div class="hero-meta">
-			<span class="chip"><span class="dot" style="background: var(--good)"></span>Open to Rust &amp; embedded roles</span>
+			<span class="chip"><span class="dot" style="background: var(--good)"></span>Embedded Software Engineer · SAAB</span>
 			<span class="chip"><span class="dot"></span>Rust · C++ · Embedded</span>
 			<span class="chip"><span class="dot"></span>MSc Computer Engineering · LTU '25</span>
 		</div>

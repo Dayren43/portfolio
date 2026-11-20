@@ -9,8 +9,14 @@
 	</div>
 
 	<ol class="exp-feed">
-		{#each EXPERIENCE as e}
-			<li class="exp-row" class:active={e.status === 'active'}>
+		{#each EXPERIENCE as e, i}
+			<!-- Consecutive SAAB roles are one continuous stint, so they share an unbroken rail. -->
+			<li
+				class="exp-row"
+				class:active={e.status === 'active'}
+				class:joined={e.company === 'SAAB' && EXPERIENCE[i + 1]?.company === 'SAAB'}
+				class:continued={e.company === 'SAAB' && EXPERIENCE[i - 1]?.company === 'SAAB'}
+			>
 				<div class="exp-rail">
 					<span class="exp-dot" aria-hidden="true"></span>
 					<span class="exp-line" aria-hidden="true"></span>

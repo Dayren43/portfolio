@@ -537,6 +537,14 @@ h1.name em {
   transform: translateX(-50%);
 }
 .exp-row:last-child .exp-line { display: none; }
+/* Internal move: no divider, and a solid rail running from one role's dot into the next. */
+.exp-row.continued { border-top: none; padding-top: 6px; }
+.exp-row.joined { padding-bottom: 14px; }
+.exp-row.joined .exp-line {
+  bottom: -32px;
+  width: 2px;
+  background: linear-gradient(180deg, oklch(0.72 0.16 45 / .7) 0%, var(--ink-4) 100%);
+}
 .exp-when {
   padding-top: 4px;
   display: flex; flex-direction: column; gap: 4px;
@@ -664,7 +672,9 @@ h1.name em {
   .hero { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
   .channel-row { grid-template-columns: 48px 1fr; gap: 16px; padding: 18px; }
-  .channel-stats, .channel-cta { display: none; }
+  .channel-stats { display: none; }
+  .channel-cta { grid-column: 1 / -1; flex-direction: row; }
+  .channel-cta .btn { flex: 1; }
   .expand-grid { grid-template-columns: 1fr; gap: 18px; padding: 18px; }
 }
 @media (max-width: 720px) {

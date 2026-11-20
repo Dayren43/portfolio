@@ -9,8 +9,8 @@
 		</p>
 		<p>
 			MSc in Computer Engineering from Luleå University of Technology (2020–2025), specialised in
-			<span style="color: var(--ink)">Industriella datorsystem</span> — industrial computer systems,
-			mostly Rust + embedded. Master's thesis at Ericsson on satellite integration in 6G.
+			<span style="color: var(--ink)">Industriella datorsystem</span> (industrial computer systems),
+			mostly Rust + embedded. Master's thesis at Ericsson: built a simulator to size LEO satellite constellations for 6G coverage.
 		</p>
 	</div>
 
@@ -21,6 +21,14 @@
 			<a class="link-row" href="https://github.com/Dayren43" target="_blank" rel="noreferrer">
 				<span class="k">GITHUB</span>
 				<span class="v">/Dayren43 <span class="arrow">↗</span></span>
+			</a>
+			<a class="link-row" href="https://www.linkedin.com/in/isak-forsgren" target="_blank" rel="noreferrer">
+				<span class="k">LINKEDIN</span>
+				<span class="v">/in/isak-forsgren <span class="arrow">↗</span></span>
+			</a>
+			<a class="link-row" href="/isak-forsgren-cv.pdf" download>
+				<span class="k">CV</span>
+				<span class="v">Download PDF <span class="arrow">↓</span></span>
 			</a>
 			<a class="link-row" href="mailto:Isak.Forsgren@gmail.com">
 				<span class="k">MAIL</span>

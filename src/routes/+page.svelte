@@ -18,7 +18,7 @@
 
 	<div class="section-head">
 		<h2><span class="idx">02 ·</span>Projects</h2>
-		<span class="subtitle">3 projects</span>
+		<span class="subtitle">{PROJECTS.length} projects</span>
 	</div>
 
 	<div class="channels">

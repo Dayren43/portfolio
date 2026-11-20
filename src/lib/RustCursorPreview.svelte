@@ -97,7 +97,7 @@
 		<text x={MB.x + 4} y={MB.y + 9} class="prv-tiny" fill="var(--ink-3)">27" · 1920×1080</text>
 		<rect x={MB.x + 38} y={MB.y + MB.h + 4} width="24" height="3" rx="1" fill="var(--border)"/>
 
-		<!-- Physical-y guide — both modes, colour switches -->
+		<!-- Physical-y guide: both modes, colour switches -->
 		<line x1={MA.x + 8} y1={startY} x2={MB.x + MB.w - 8} y2={startY}
 			stroke={guideColor} stroke-dasharray="2 3" stroke-width="0.8"
 			opacity={guideOpacity}/>

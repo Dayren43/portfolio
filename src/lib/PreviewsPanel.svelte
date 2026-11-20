@@ -2,11 +2,14 @@
 	import { onDestroy } from 'svelte';
 	import RustCursorPreview from './RustCursorPreview.svelte';
 	import TempPreview from './TempPreview.svelte';
+	import SatPreview from './SatPreview.svelte';
 
 	// Temp: 8s, RustCursor: 1 full WITH+WITHOUT cycle (115 ticks × 60ms × 2 ≈ 13.8s)
 	const PREVIEWS = [
-		{ title: 'Temp-logging',  sub: 'ESP32-C3 → Svelte dashboard · the design source',      component: TempPreview,       duration: 8000  },
-		{ title: 'RustCursor',    sub: 'multi-monitor cursor remap · live',                    component: RustCursorPreview, duration: 13800 }
+		{ title: 'Temp-logging',  sub: 'Rust on ESP32-C3 → Svelte dashboard · 24h snapshot',  component: TempPreview,       duration: 8000  },
+		{ title: 'RustCursor',    sub: 'multi-monitor cursor remap · animated demo',           component: RustCursorPreview, duration: 13800 },
+		// 3 layouts × 77 ticks × 60ms ≈ 13.8s
+		{ title: 'Satellite constellations', sub: 'thesis simulator · orbit layouts · illustrative', component: SatPreview,       duration: 13800 }
 	];
 
 	let idx    = $state(0);
@@ -33,7 +36,7 @@
 	aria-label="Project previews"
 >
 	<div class="readings-head">
-		<span>NOW SHOWING · {current.title.toUpperCase()}</span>
+		<span>DEMO · {current.title.toUpperCase()}</span>
 		<span class="prv-dots" role="tablist">
 			{#each PREVIEWS as _, i}
 				<button

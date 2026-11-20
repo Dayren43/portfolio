@@ -1,0 +1,78 @@
+<!doctype html>
+<!-- Public CV for the site. Deliberately has no phone number. Render with cv/render.mjs. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Isak Forsgren – CV</title>
+<style>
+	@page { size: A4; margin: 14mm 16mm; }
+	* { box-sizing: border-box; }
+	body { font-family: Arial, Helvetica, 'Liberation Sans', sans-serif; font-size: 9.8pt; line-height: 1.3; color: #111; margin: 0; }
+	a { color: #1a4fa0; text-decoration: none; }
+	h1 { font-size: 20pt; margin: 0 0 3pt; }
+	.contact { margin: 0 0 8pt; color: #333; }
+	h2 { font-size: 9.8pt; letter-spacing: 0.12em; color: #555; margin: 11pt 0 4pt; padding-bottom: 2pt; border-bottom: 0.6pt solid #bbb; }
+	h3 { font-size: 9.8pt; margin: 6pt 0 2pt; display: flex; justify-content: space-between; gap: 12pt; }
+	h3 span { font-weight: normal; color: #444; white-space: nowrap; }
+	h3 a { font-weight: normal; }
+	p { margin: 0 0 3pt; }
+	ul { margin: 0 0 2pt; padding-left: 14pt; }
+	li { margin-bottom: 1.5pt; }
+</style>
+</head>
+<body>
+<h1>Isak Forsgren</h1>
+<p class="contact">Stockholm, Sweden | <a href="mailto:Isak.Forsgren@gmail.com">Isak.Forsgren@gmail.com</a> | <a href="https://github.com/Dayren43">github.com/Dayren43</a> | <a href="https://www.linkedin.com/in/isak-forsgren">linkedin.com/in/isak-forsgren</a></p>
+
+<h2>SUMMARY</h2>
+<p>Embedded software engineer at SAAB (C++ on an RTOS) with an MSc in Computer Engineering. Writes embedded Rust (RTIC, Embassy) on nRF52840 and ESP32-C3 in personal and university projects; prior simulation and test work at Ericsson.</p>
+
+<h2>EXPERIENCE</h2>
+<h3>SAAB – Embedded Software Engineer <span>Nov 2026 – Present</span></h3>
+<ul><li>Develop embedded C++ software on an RTOS (under NDA).</li></ul>
+
+<h3>SAAB – Software Engineer <span>Aug 2025 – Nov 2026</span></h3>
+<ul>
+	<li>Developed Java and C++ software on a defense-tech team in a large SAFe program (under NDA).</li>
+	<li>Early adopter of agentic coding on the team; presented reusable skills and ways of working to the wider section.</li>
+</ul>
+
+<h3>Ericsson – Master's Thesis <span>Jan 2025 – Jun 2025</span></h3>
+<ul>
+	<li>Built a Python simulator using the SGP4 orbit model to size low-Earth-orbit satellite constellations for 6G coverage; published on <a href="https://ltu.diva-portal.org/smash/record.jsf?pid=diva2:1967490">DiVA (diva2:1967490)</a>.</li>
+	<li>Compared polar, inclined, and mixed constellations (300–1,000 satellites) in Ericsson's network simulator, with runs exceeding 1M CPU-seconds; an even mix reached full coverage with relatively few satellites.</li>
+</ul>
+
+<h3>Ericsson – R&amp;D Internship <span>Jun 2024 – Aug 2024</span></h3>
+<ul><li>Designed and shipped a Java framework, including a custom script parser, that runs packetdrill network-protocol tests against Ericsson's in-house simulator alongside internal test cases.</li></ul>
+
+<h3>Ericsson – R&amp;D Internship <span>Jun 2023 – Aug 2023</span></h3>
+<ul><li>Built Python tooling to post-process and visualize simulation data, replacing a legacy MATLAB tool.</li></ul>
+
+<h2>PROJECTS</h2>
+<h3>RustCursor <a href="https://github.com/Dayren43/RustCursor">github.com/Dayren43/RustCursor</a></h3>
+<ul>
+	<li>Built a Windows utility in Rust (~4,700 lines) that fixes cursor jumps between monitors of different sizes by remapping every crossing through a shared physical-millimeter coordinate space.</li>
+	<li>Intercepts mouse input at the OS level through a Win32 low-level hook or the Interception kernel driver; ships with an egui settings GUI, 46 unit tests, and GitHub Actions CI with automated releases.</li>
+</ul>
+
+<h3>LTU Bike Trailer – capstone, team of 13 <a href="https://github.com/Ltu-Bike-trailer/control-software">github.com/Ltu-Bike-trailer/control-software</a></h3>
+<ul>
+	<li>Owned load and angle measurement: wrote an Embedded Rust driver for the MA732 magnetic angle sensor (SPI) and an RTIC application on the nRF52840 that publishes angles over CAN bus.</li>
+	<li>Led HX711 load-cell sensing and its controller integration; designed the PCB for a remote sensor.</li>
+</ul>
+
+<h3>Temp-logging <a href="https://github.com/Dayren43/Temp-logging">github.com/Dayren43/Temp-logging</a></h3>
+<ul><li>Built an ESP32-C3 sensor node with no_std async Rust firmware on Embassy (rewritten from C++) and a hand-written DHT22 driver, feeding a Python poller, PostgreSQL, and a Svelte dashboard.</li></ul>
+
+<h2>EDUCATION</h2>
+<h3>Luleå University of Technology – MSc in Computer Engineering <span>Aug 2020 – Jun 2025</span></h3>
+<p>Specialization: Industrial Computer Systems. Thesis at Ericsson on LEO satellite constellations for 6G.</p>
+
+<h2>SKILLS</h2>
+<p><b>Languages:</b> Rust, C/C++, Python, Java, TypeScript, SQL, MATLAB</p>
+<p><b>Embedded:</b> Embedded Rust (no_std), RTIC, Embassy, nRF52840, ESP32-C3, CAN bus, SPI</p>
+<p><b>Tools:</b> Git, Docker, Linux, GitHub Actions</p>
+<p><b>Spoken languages:</b> Swedish (native), English (fluent)</p>
+</body>
+</html>

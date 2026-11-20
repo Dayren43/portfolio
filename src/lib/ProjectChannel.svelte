@@ -42,17 +42,19 @@
 		</div>
 
 		<div class="channel-cta">
-			<a
-				class="btn"
-				class:btn-hot={p.featured}
-				href={p.href}
-				target="_blank"
-				rel="noreferrer"
-				onclick={(e) => e.stopPropagation()}
-			>
-				<span>VIEW REPO</span>
-				<span class="caret">↗</span>
-			</a>
+			{#if p.href}
+				<a
+					class="btn"
+					class:btn-hot={p.featured}
+					href={p.href}
+					target="_blank"
+					rel="noreferrer"
+					onclick={(e) => e.stopPropagation()}
+				>
+					<span>{p.cta ?? 'VIEW REPO'}</span>
+					<span class="caret">↗</span>
+				</a>
+			{/if}
 			<button
 				class="btn"
 				onclick={(e) => {
@@ -61,7 +63,7 @@
 				}}
 			>
 				<span>{open ? 'COLLAPSE' : 'DETAILS'}</span>
-				<span class="caret">{open ? '—' : '+'}</span>
+				<span class="caret">{open ? '−' : '+'}</span>
 			</button>
 		</div>
 	</div>
@@ -97,7 +99,9 @@
 				<h4 style="margin-top: 18px">// channel meta</h4>
 				<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-2); line-height: 1.7">
 					<div>code: <span style="color: var(--ink)">{p.code}</span></div>
-					<div>link: <a href={p.href} target="_blank" rel="noreferrer" style="color: var(--hot)">{p.href.replace('https://', '')}</a></div>
+					{#if p.href}
+						<div>link: <a href={p.href} target="_blank" rel="noreferrer" style="color: var(--hot)">{p.href.replace('https://', '')}</a></div>
+					{/if}
 				</div>
 			</div>
 		</div>
